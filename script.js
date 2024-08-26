@@ -5,10 +5,9 @@ let elementList = [];
 let score = 0;
 let answeredCards = 0;
 let totalCards = 0;
-/* TODO: Add way to save and reopen high score from previous games! */
 let highScore = 0;
 
-const loadGame = async () => {
+async function loadGame() {
     score = 0;
     answeredCards = 0;
     totalCards = 0;
