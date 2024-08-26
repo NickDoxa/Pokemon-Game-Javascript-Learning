@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="pokemon.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Javascript Learning</title>
+        <link rel="icon" href="images/pokeball.png">
+    </head>
+    <body>
+        <div id="nav-bar">
+            <h3 id="nav-bar-title">Pokémon Game - created by Nick Benvenuti</h3>
+            <a href="https://pokemondb.net" target="_blank" class="nav-bar-link">
+                <img src="images/pokeball.png" alt="View Options" class="icon">
+            </a>
+            <a href="https://github.com/nickdoxa" target="_blank" class="nav-bar-link">
+                <img src="images/github.png" alt="View Options" class="icon">
+            </a>
+        </div>
+        <div class="centered-content box-medium avoid-top">
+            <header>Who's That Pokémon?</header>
+        </div>
+        <div class="box-large centered-content">
+            <h3 class="hide-on-start">How it works:</h3>
+            <p class="hide-on-start">Depending upon how many cards you choose to generate, you will need to guess each
+                Pokémon in the cards correctly in order to win. Your high score is based upon how many
+                cards you can guess correctly in the same game.</p>
+            <input value="1" type="number" id="card-amount-input" class="hide-on-start"><br>
+            <button id="start-btn" onclick="loadGame()" class="rounded-btn hide-on-start"><b>Start Game</b></button>
+            <img src="images/loading.svg" alt="Loading..." id="pregame-loading-img" class="loading-img" hidden>
+            <div id="card-box" class="centered-content show-on-start" hidden>
+            </div>
+        </div>
+    </body>
+</html>
